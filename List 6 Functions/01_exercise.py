@@ -21,4 +21,4 @@ def n_linhas(n):
 n = int(input("Digite um número inteiro: "))
 
 # imprimta o resultado
-print(n_linhas(n))
+n_linhas(n)
