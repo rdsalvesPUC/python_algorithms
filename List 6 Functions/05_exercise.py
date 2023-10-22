@@ -3,4 +3,16 @@
 import os
 os.system("cls")
 
-def somaImporto(taxaImposto, altera):
+# deve retornar o valor final do item, custo + imposto
+def somaImposto(taxaImposto, custo):
+  custoFinal = ((taxaImposto / 100) * custo) + custo
+  return taxaImposto, custoFinal
+
+# entrada de dados
+custo = float(input("Custo do produto: "))
+taxaImposto = float(input("Taxa: "))
+
+# execução da function somaImposto, retornando um valor para tupla valorFinal
+valorFinal = somaImposto(taxaImposto, custo)
+
+print(f"Taxa: {valorFinal[0]}% - Valor Final: {valorFinal[1]}")
