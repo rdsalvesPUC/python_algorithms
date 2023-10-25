@@ -4,4 +4,4 @@ import os
 os.system("cls")
 
 def desenhar(linhas=1, colunas=1):
-    
+    return None
