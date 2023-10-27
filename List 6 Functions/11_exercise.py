@@ -3,4 +3,7 @@
 import os
 os.system("cls")
 
-# 
+def data_numerica(dia, mes, ano):
+    return f"{dia} de {mesPorExtenso} de {ano}"
+
+data = input("Digite a data desejada no formato DD/MM/AAAA: ")
