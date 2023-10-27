@@ -10,8 +10,6 @@ def embaralhar(texto):
     
     return texto_embaralhado
 
-
-
 texto = str(input("Digite o texto: "))
 
 print(embaralhar(texto))
