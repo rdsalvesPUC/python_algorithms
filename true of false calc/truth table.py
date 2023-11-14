@@ -58,7 +58,7 @@ def isCanonical(formula):
 
 
 # input da string pelo usuário
-print(f'Calculadora de Tabela Verdade')
+print(f'### Calculadora de Tabela Verdade ###')
 print(f'(Crie sua formula em FBF utilizando somente operadores canonicos: ^, v, ~)\n')
 
 while True:
@@ -72,16 +72,17 @@ while True:
     # Se não tem números, validamos se tem operadores errados
     if haveNumbers_result ==  False:
         isCanonical_result = isCanonical(formula)       # Recebe o resultado da função isCanonical
-        if isCanonical_result:
-            print('Formula canonica, vamos seguir!')
-        else:
-            print(f'\nA formula descrita não é canonica, não utilize os operadores: ' + ', '.join(isCanonical_result))
+        if isCanonical_result == True:
+            print('--Formula canonica, vamos seguir!\n')
+            break
+        elif isCanonical_result != []:
+            print(f'--A formula descrita não é canonica, não utilize o(s) operadore(s): ' + ', '.join(isCanonical_result) + '\n')
     
     elif haveNumbers_result == True:
-        print(f'\nNão utilize números, somente preposições com letras de A-Z')
+        print(f'--Não utilize números, somente preposições com letras de A-Z\n')
     
 
-
+print(f'\n### Agora vamos validar FBF ###')
 
 # Agora vamos validar a FBF
 
