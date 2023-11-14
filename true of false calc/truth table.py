@@ -51,7 +51,7 @@ def isCanonical(formula):
 #     if errors != []:
 #         return False
     
-#     return operadores, proposicoes
+#     return operadores, proposicoesdasd
 
 
 
