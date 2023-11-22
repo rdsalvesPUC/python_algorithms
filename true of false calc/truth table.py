@@ -49,7 +49,7 @@ def isFormula(formula):
 def fullCheck(formula):
 	# Confere se não tem números
 	haveNumbers_result = haveNumbers(formula)
-	if haveNumbers_result is  False:
+	if haveNumbers_result is False:
 
 		# Confere se tem operadores não canonicos
 		isCanonical_result = isCanonical(formula)
